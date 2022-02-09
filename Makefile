@@ -16,5 +16,5 @@ amd64:
 	docker push aurax86/serv:amd64
 
 manifest:
-	docker manifest create aurax86/serv:latest --amend aurax86/serv:arm64v8 --amend aurax86/serv:arm32v7 --amend aurax86/serv:amd64
+	docker manifest create aurax86/serv:latest --amend aurax86/serv:amd64 --amend aurax86/serv:arm64v8 --amend aurax86/serv:arm32v7 
 	docker manifest push aurax86/serv:latest
