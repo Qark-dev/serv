@@ -1,4 +1,5 @@
 # Serv
+<img src="https://media.discordapp.net/attachments/828947489267777570/940816988526235718/logo.png" alt="serv logo" class="img-center"/>
 
 An ultra lightweight, minimal, and fast web server. (The binary is only ~2mb!!)
 
@@ -37,6 +38,7 @@ For 32-bit arm, use `--platform linux/arm/v7` and  `--platform linux/arm/v8` for
 #### Environment Variables
 
 * `SERV_DIR` - Directory to serve within the container, set to `/dist` by default.
+* `IDX_FILE` - Index file from within `SERV_DIR`, defaults to `index.html`.
 
 #### Volumes
 
