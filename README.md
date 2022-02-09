@@ -23,14 +23,16 @@ Create a container to host the server
 
 ```shell
 docker pull aurax86/serv:latest
-docker run -d -p 8080:80 aurax86/serv:latest 
+docker run --platform linux/amd64 -d -p 8080:80 aurax86/serv:latest 
 ```
 
 Or host files from a volume
 ```shell
-docker run -d -p 8080:80 -v "$PWD":/dist aurax86/serv:latest 
+docker run --platform linux/amd64 -d -p 8080:80 -v "$PWD":/dist aurax86/serv:latest 
 ```
-where `$PWD` is the directory from the host which you wish to deploy 
+where `$PWD` is the directory from the host which you wish to deploy.
+
+For 32-bit arm, use `--platform linux/arm/v7` and  `--platform linux/arm/v8` for 64-bit
 
 #### Environment Variables
 
