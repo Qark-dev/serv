@@ -5,8 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serv</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Rowdies:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0.5em;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 5em;
+            font-family: 'Arimo', sans-serif;
+            padding: 0;
+        }
+
+        main {
+            font-size: 1.7em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #acknowledge {
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: 'Rowdies', cursive;
+
+        }
+    </style>
 </head>
 <body>
-    Congratulations. This shows that your container is working correctly.
+    <div id="logo-container">
+        <img src="https://media.discordapp.net/attachments/828947489267777570/940816988526235718/logo.png" alt="serv logo" height="300px" />
+    </div>
+    <h1>serv</h1>
+    <main>
+        <p>Congratulations! 🎉🎉 This shows that your container is working correctly.</p>
+    </main>
+    <p>Now you may mount a directory to host to `/dist`.</p>
+    <p id="acknowledge">This server is built using <i>rust</i> and <i>actix-web</i></p>
 </body>
 </html>
