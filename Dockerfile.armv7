@@ -1,0 +1,4 @@
+FROM scratch
+COPY target/armv7-unknown-linux-musleabihf/release/serv .
+COPY dist dist
+CMD ["/serv", "dist"]

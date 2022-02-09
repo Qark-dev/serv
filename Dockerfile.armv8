@@ -1,0 +1,4 @@
+FROM scratch
+COPY target/aarch64-unknown-linux-musl/release/serv .
+COPY dist dist
+CMD ["/serv", "dist"]
