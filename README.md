@@ -40,7 +40,7 @@ For 32-bit arm, use `--platform linux/arm/v7` and  `--platform linux/arm/v8` for
 
 #### Volumes
 
-* `/dist` - File location
+* `/dist` - Mount a volume to this directory in the container
 
 ## Built With
 
